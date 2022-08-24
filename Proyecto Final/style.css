@@ -1,0 +1,14 @@
+*{border: 1px solid black}
+
+.pos_fixed{
+    position: fixed;
+    bottom: 1vw;
+    right: 2vw;
+}
+
+div.sticky{
+    position: -webkit-sticky; /* Safari */  
+    position: sticky;
+    top: 0;
+    background-color: white
+}

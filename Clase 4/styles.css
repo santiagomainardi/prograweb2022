@@ -27,8 +27,6 @@ p{
     padding: 3em;
 }
 
-#pos_calltoaction{position: fixed;
+.pos_fixed{position: fixed;
 bottom: 1 vw;
 right: 1 vw}
-
-.pos_navegación{position: sticky}
