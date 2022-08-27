@@ -1,11 +1,11 @@
-*{border: 1px solid black}
+*{border: 1px solid green}
 /* Con el asterisco aplico una instrucción para TODO (normalizar) */
 h1{
     color: grey;
     font-size: 50px
 }
 
-body{
+body{   
     background-color: beige;
 }
 
@@ -14,19 +14,15 @@ body{
     font-size: 100px
 }
 
-#titular3{
-    color: black;
-}
-
-.borde{
-    border:1px solid black;
-}
-
 p{
     font-size: 20px;
     padding: 3em;
 }
 
-.pos_fixed{position: fixed;
-bottom: 1 vw;
-right: 1 vw}
+.tapa{text-align: center;
+}
+
+#agregar{position: fixed;
+bottom: 1vw;
+right: 2vw;
+max-width: 10%;}
