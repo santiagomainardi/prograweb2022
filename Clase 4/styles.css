@@ -5,6 +5,10 @@ h1{
     font-size: 50px
 }
 
+p{
+    text-align: center;
+}
+
 body{   
     background-color: beige;
 }

@@ -1,4 +1,6 @@
-*{border: 1px solid black}
+*{background-color: beige;
+    font-family: Arial, Helvetica, sans-serif;
+border: 1px solid green;}
 
 .pos_fixed{
     position: fixed;
@@ -7,8 +9,22 @@
 }
 
 div.sticky{
-    position: -webkit-sticky; /* Safari */  
     position: sticky;
     top: 0;
-    background-color: white
 }
+
+h1{color: aliceblue;
+    background-color: blue}
+
+#navegar{
+    display: inline;
+    margin: 30px 30px 30px 0px;
+font-size: 30px;
+color: blue;}
+
+#calltoaction{
+    display: none;
+}
+
+#tareas{font-size: 25px;
+margin-bottom: 10px;}

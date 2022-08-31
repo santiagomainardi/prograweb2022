@@ -1,0 +1,21 @@
+#caja1{background-color: aqua;
+border: 5px solid black;}
+
+#caja2{
+    margin: 10px 20px 30px 40px;
+    border: 1px solid red;
+    border-width: 1px 10px 30px 40px;
+    border-color: aqua red brown;
+}
+
+li{ 
+display: inline;
+margin: 30px;}
+
+#monoespacio{font-family: 'Courier New', Courier, monospace;}
+
+*{
+    font-family: Arial, Helvetica, sans-serif;}
+
+p{font-weight: 600;
+    font-style: italic;}
