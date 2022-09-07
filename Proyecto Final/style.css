@@ -1,6 +1,11 @@
-*{background-color: beige;
+*{background-color: white;
     font-family: Arial, Helvetica, sans-serif;
 border: 1px solid green;}
+
+#logo{
+    position: sticky;
+    top: 0%;
+}
 
 .pos_fixed{
     position: fixed;
@@ -8,19 +13,24 @@ border: 1px solid green;}
     right: 2vw;
 }
 
-div.sticky{
+div.sticky {
+    width: 100vw;
+    position: -webkit-sticky;
     position: sticky;
     top: 0;
-}
-
-h1{color: aliceblue;
-    background-color: blue}
+    background-color: white;
+    z-index: 1;
+    }
 
 #navegar{
     display: inline;
     margin: 30px 30px 30px 0px;
 font-size: 30px;
-color: blue;}
+color: #3a3a3a;}
+
+#navegar > li {
+    display: inline;
+  }
 
 #calltoaction{
     display: none;
@@ -28,3 +38,31 @@ color: blue;}
 
 #tareas{font-size: 25px;
 margin-bottom: 10px;}
+
+#semana {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: beige;
+    justify-content: space-evenly;
+  }
+
+#semana > div {
+    margin: 10px;
+    height: 50px;
+    padding: 20px;
+    font-size: 20px;
+  }
+
+#mes {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: beige;
+    justify-content: flex-start;
+}
+
+#mes > div {
+    margin: 10px;
+    height: 50px;
+    width: 50px;
+    font-size: 20px;
+  }
