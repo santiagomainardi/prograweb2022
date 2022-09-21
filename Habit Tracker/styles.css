@@ -13,8 +13,6 @@
     column-gap: 2%;
   }
   
-  .HEADER { grid-area: HEADER;
-  padding: 10px 10px ;}
 
   .MENÚ { grid-area: MENÚ; }
   
