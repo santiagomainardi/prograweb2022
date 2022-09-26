@@ -57,7 +57,7 @@
   
   .habitos { grid-area: habitos;
   padding: 20px 0 0 20px}
-  
+
   .calendario { grid-area: calendario;
   background-color: #746c6a; 
   padding-left: 20px;}
@@ -135,4 +135,9 @@
     background-color: #12bf83;
     color: black;
     border-radius: 5px;
+  }
+
+  .habitos > div {
+    margin: 10px;
+    font-size: 20px;
   }
