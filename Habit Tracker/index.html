@@ -4,19 +4,40 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Check</title>
+    <title>Habit Tracker</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="image/x-icon" href="./Img/check.ico.ico">
 </head>
 <body>
-    <div class="container">
-        <div class="MENÚ">A simple way of tracking habits
-            Home
-            Stats
-            Scoreboard
+    <div class="container todo">
+    <head> <div class="navegacion">
+        <div class="fecha">
+            <div class="fechaIzq">
+                <div id="numdiaHoy">26</div>
+                <div> 
+                    <div id="mesHoy">Septiembre</div>
+                    <div id="anoHoy">2022</div>
+                </div>
+            </div>
+            <div id="diaSemana"> Lunes</div>
         </div>
-        <div class="HÁBITOS">HÁBITOS</div>
-        <div class="DATOS">    <div id="mes">
+        </div>
+    </head>
+    <body>
+        <div class="menu"> <h2>Agregar Tarea</h2>
+            <form>
+            <input type="text" placeholder="Nueva Tarea"> 
+            <button type="submit">+</button>
+            <button type="button">Ordenar</button>
+            </form>
+            </div>
+        <div class="habitos"> 
+                <div> <input type="checkbox"> Tarea 1</div> 
+                <div> <input type="checkbox"> Tarea 2</div> 
+                <div> <input type="checkbox"> Tarea 3</div> 
+            </div>
+        <div class="calendario roundBorder"> 
+            <div id="mes">
             <div>1</div>
             <div>2</div>
             <div>3</div>
@@ -46,8 +67,12 @@
             <div>27</div>
             <div>28</div>
             <div>29</div>
-            <div>30</div></div>
-      </div>
-      <div class="FOOTER">FOOTER</div>
+            <div>30</div>
+            <div>31</div>
+            </div>
+        </div>
+    </body>
+      <div class="footer">FOOTER</div>
+    </div>
 </body>
 </html>
