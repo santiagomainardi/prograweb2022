@@ -1,4 +1,4 @@
-* {
+* {border: solid 1px red;
   box-sizing: border-box;
 }
 
@@ -42,12 +42,9 @@
   grid-template-areas:
     "navegacion navegacion navegacion navegacion navegacion navegacion navegacion navegacion navegacion navegacion navegacion navegacion"
     "menu menu menu habitos habitos habitos habitos calendario calendario calendario calendario calendario"
-    "footer footer footer footer footer footer footer footer footer footer footer footer";
+    }
 }
-}
-
-  .footer { grid-area: footer; 
-  background-color: blue;}
+/*REVISAR GRID AREA DEL FOOTER */
   
   .navegacion { grid-area: navegacion; 
   background-color: midnightblue;
@@ -56,17 +53,22 @@
   .menu { grid-area: menu;}
   
   .habitos { grid-area: habitos;
+    background-color: lightblue;
   padding: 20px 0 0 20px}
 
   .calendario { grid-area: calendario;
-  background-color: #746c6a; 
+  background-color: violet; 
   padding-left: 20px;}
+
+  footer {   width: 100%;
+    background-color: blue;
+  }
 
   body {
     font-family: 'Courier New', Courier, monospace;
     margin: 0;
     height: 100vh;
-    background-color: #222222;
+    background-color: pink;
   }
 
   .roundBorder {
@@ -76,10 +78,10 @@
   .todo {
     margin: 25px auto;
     padding: 25px;
-    background-color: #473a42;
+    background-color: wheat;
     width: 100%;
     max-width: 1000px;
-    color: white;
+    color: black;
   }
 
   .fecha {
@@ -140,4 +142,15 @@
   .habitos > div {
     margin: 10px;
     font-size: 20px;
+  }
+
+  #tarea{
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    border: solid 1px red;
+    padding: 10px;
+  }
+
+  #habito{
+    background-color: blue;
   }
