@@ -24,6 +24,7 @@ body:hover {
 }
 */
 
+/* For mobile phones: */
 .container{
     width: 100%;
     height: 100vh;
@@ -38,16 +39,56 @@ body:hover {
     margin: 25px auto ;
     padding: 25px;
     width: 100%;
-    max-width: 400px;
+    max-width: 300px;
     height: 70%;
     background-color: darkblue ;
-    border-radius: 30px;
+    border-radius: 10px;
     /* border radius es para hacer que sea una cajita con bordes redondeados */
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding-top: 30px;
 }
+
+#calendario{
+    background-color: lightblue;
+    opacity: .9;
+    max-width: 400px;
+    height: 50%;
+    border-radius: 30px;
+}
+
+@media only screen and (max-width: 300px) {
+    /* para que no se rompa */
+    .container {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    /* Celu Vision */
+    #calendario{
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 700px) {
+    /* Tablet Vision */
+    .tareas_wrap{
+        max-width: 400px;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    /* Desktop Vision */
+    .container{flex-direction: row;
+        /* Esto es para que se vea una cosa al lado de la otra. */
+    }
+    .tareas_wrap{
+        max-width: 500px;
+    }
+}
+
 
 .fecha {
     display: flex;
@@ -145,9 +186,15 @@ input {
     font-size: 18px;
 }
 
-.add_tarea:hover {
+.botonAdd:hover {
     /* hover: "cuando le paso el mouse por arriba" */
-    background-color: green;
+    background-color: cyan;
+}
+
+.botonOrdenar {
+    background-color: coral;
+    border-radius: 10px;
+    color: white;
 }
 
 .tarea {
