@@ -34,22 +34,71 @@ body:hover {
     /* flex-direction especifica cómo van los objetos flexibles en el contenedor flexible definiendo el eje principal y la dirección */
 }
 
-.tarea_wrap {
-    min-width: 400px;
-    height: 500px;
+.tareas_wrap {
+    margin: 25px auto ;
+    padding: 25px;
+    width: 100%;
+    max-width: 400px;
+    height: 70%;
     background-color: darkblue ;
     border-radius: 30px;
     /* border radius es para hacer que sea una cajita con bordes redondeados */
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     padding-top: 30px;
 }
 
-.lista_wrapper {
-    width: 80%;
-    height: 80%;
+.fecha {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: aliceblue;
+}
+
+.fechaIzquierda{
+    display: flex;
+    align-items: center;
+}
+
+#fechaNumero {
+    font-size: 50px;
+}
+
+#fechaDiaSem {
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+#fechaMes,
+#fechaNumero,
+#dateText  {
+    font-weight: bold;
+}
+
+#fechaMes,
+#fechAno {
+    margin-left: 7px;
+    font-size: 20px;
+}
+
+form {
+    margin: 20px 0;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: auto 35px auto;
+    grid-column-gap: 15px;
+}
+
+input {
+    border: none;
+    padding-left: 10px;
+    background-color: white;
+}
+
+.contenedorTareas {
+    width: 100%;
+    height: 100%;
     overflow-x: hidden;
     overflow-y: auto;
     /* Overflow es cómo vás a scrolear, sobre qué eje, moverte */
@@ -57,7 +106,7 @@ body:hover {
 
 /* ScrollBar width */
 ::-webkit-scrollbar {
-    width: 10px;
+    width: 5px;
   }
   
   /* ScrollBar Track */
@@ -78,20 +127,22 @@ body:hover {
   }
 
 .tarea_name {
-    width: 80%;
-    height: 40px;
+    height: 50px;
     border-radius: 5px;
-    padding-left: 20px;
+    position: relative;
 }
 
-.add_tarea {
-    width: 80%;
-    margin: 10px 0;
-    height: 40px;
-    background-color: #ffc;
-    font-size: 20px;
+.botonAdd,
+.botonOrdenar {
+    border: none;
+    font-weight: bold;
     cursor: pointer;
-    border-radius: 6px;
+}
+
+.botonAdd {
+    height: 35px;
+    border-radius: 50%;
+    font-size: 18px;
 }
 
 .add_tarea:hover {
@@ -102,13 +153,24 @@ body:hover {
 .tarea {
     width: 95%;
     height: 40px;
-    background-color: aliceblue;
+    background-color: lightblue;
     margin: 10px 0;
     display: flex;
     align-items: center;
     padding-left: 10px;
     position: relative;
     border-radius: 5px;
+}
+
+.tarea:hover {
+    background-color: aqua;
+    cursor: pointer;
+}
+
+#done {
+    background-color: whitesmoke;
+    text-decoration: line-through;
+    color: black;
 }
 
 .borrar {

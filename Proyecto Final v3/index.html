@@ -13,26 +13,41 @@
 </head>
 <body>
     <div class="container">
-        <div class="tarea_wrap">
-            <input type="text" class="tarea_name">
-            <button class="add_tarea">Agregar</button>
-            <div class="lista_wrapper">
-                <div class="tarea">
+        <div class="tareas_wrap">
+            <div class="fecha">
+                <div class="fechaIzquierda">
+                    <div id="fechaNumero"> 27
+                    </div>
+                    <div id="fechaMes"> Octubre 
+                    </div>
+                    <div id="fechAno"> 2022 
+                    </div>
+                </div>
+                <div class="fechaDiaSem"> Jueves </div>
+            </div> 
+                <!-- Acá el usuario va a ingresar el nombre de la tarea. variable que lo guarde y sea parte de la función AgregarTarea-->
+                <form action="">
+                    <input class="tarea_name" type="text" name="tasktext" autocomplete="off" placeholder="Nueva tarea">
+                    <button type="submit" class="botonAdd">+</button>
+                    <button type="button" class="botonOrdenar">Ordenar</button>
+                </form>
+            <div class="contenedorTareas">
+                <div class="tarea"> Estudiar
                     <div class="borrar">X</div>
                 </div>
-                <div class="tarea">
+                <div class="tarea"> Entrenar
                     <div class="borrar">X</div>
                 </div>
-                <div class="tarea">
+                <div class="tarea"> Guía 6 Análisi
                     <div class="borrar">X</div>
                 </div>
-                <div class="tarea">
+                <div class="tarea"> Mandarle Mail a Patricia Secretaría Académica
                     <div class="borrar">X</div>
                 </div>
-                <div class="tarea">
+                <div class="tarea"> Leer Filosofía
                     <div class="borrar">X</div>
                 </div>
-                <div class="tarea">
+                <div class="tarea" id="done"> Entender Derivadas
                     <div class="borrar">X</div>
                 </div>
                 <div class="tarea">
@@ -51,6 +66,10 @@
                     <div class="borrar">X</div>
                 </div>
             </div>
+    </div>
+    <div class="container">
+        Hola, Soy otro container
+
     </div>
 </body>
 <script src="./script.js"></script>
