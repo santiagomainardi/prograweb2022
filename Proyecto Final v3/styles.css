@@ -1,3 +1,6 @@
+/*DUDAS: 
+1) Cómo puedo hacer para que el botón de priorizar no se pase del borde azul (de tareas_wrap) */
+
 body {
     font-family: 'Courier New', Courier, monospace;
     height: 100vh;
@@ -58,6 +61,8 @@ body:hover {
     border-radius: 30px;
 }
 
+/* MEDIA QUERIES */
+
 @media only screen and (max-width: 300px) {
     /* para que no se rompa */
     .container {
@@ -89,6 +94,8 @@ body:hover {
     }
 }
 
+
+/* FECHAS */
 
 .fecha {
     display: flex;
@@ -123,11 +130,13 @@ body:hover {
     font-size: 20px;
 }
 
+/* ACCIONES */
+
 form {
     margin: 20px 0;
     display: grid;
     grid-auto-flow: column;
-    grid-template-columns: auto 35px auto;
+    grid-template-columns: auto 45px auto;
     grid-column-gap: 15px;
 }
 
@@ -167,6 +176,8 @@ input {
     background: grey; 
   }
 
+  /* #acción {} */
+
 .tarea_name {
     height: 50px;
     border-radius: 5px;
@@ -181,7 +192,7 @@ input {
 }
 
 .botonAdd {
-    height: 35px;
+    height: 45px;
     border-radius: 50%;
     font-size: 18px;
 }
