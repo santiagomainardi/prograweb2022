@@ -1,21 +1,22 @@
-// Funciones que necesito
+// Funciones
 /* 
-
 LISTA DE TAREAS
 
-1. Agregar Tarea: cuando el usuario escribe una tarea y clickea el botonAdd, se crea una tarea nueva al fondo de la lista. 
+agregarTarea() --> cuando el usuario escribe una tarea y clickea el botonAdd, se crea una tarea nueva al fondo de la lista. 
 
-2. Done: cuando el usuario clickea una tarea (en cualquier lugar excepto en la "X") la tarea se convierte en #done. Se vuelve gris y se tacha. 
+cambiarEstadoTarea() --> cuando el usuario clickea una tarea (en cualquier lugar excepto en la "X") la tarea se convierte en #done. Se vuelve gris y se tacha. 
 
-3. Priorizar/ordenar: cuando el usuario clickea el botonOrdenar, las tareas #done se pasan abajo de la lista y las pendientes arriba de la lista.
+Priorizar/ordenar: cuando el usuario clickea el botonOrdenar, las tareas #done se pasan abajo de la lista y las pendientes arriba de la lista.
 
-4. Borrar tarea: cuando el usuario clickea la "X", la tarea deja de aparecer en la lista.
+Para esto primero se tendrían que ordenar en un array y después ordenarlas?
 
-5. Mover tareas: Cuando un usuario mantiene apretado una tarea, la puede arrastrar a una posición diferente en la lista. 
+mostrarTareasOrdenadas() --> Las tareas Done pasan a estar abajo de todo en la lista
 
-5. Nuevo Día: Cuando pasa el día todas las tareas se borran automáticamente.
+borrarTarea() --> cuando el usuario clickea la "X" (.borrar), la tarea deja de aparecer en la lista.
 
-6. Si una 
+setDate() --> Función para setear la fecha del día de hoy
+
+Mover tareas: Cuando un usuario mantiene apretado una tarea, la puede arrastrar a una posición diferente en la lista. 
 
 CALENDARIO
 

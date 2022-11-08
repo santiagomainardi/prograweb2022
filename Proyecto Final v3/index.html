@@ -6,31 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyecto Final</title>
     <link rel="stylesheet" href="./styles.css">
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
+    <script src="./script.js"></script>
 </head>
 <body>
     <div class="container">
         <div class="tareas_wrap">
             <div class="fecha">
                 <div class="fechaIzquierda">
-                    <div id="fechaNumero"> 27
+                    <div id="fechaNumero"> 21
                     </div>
-                    <div id="fechaMes"> Octubre 
+                    <div id="fechaMes">  Octubre
                     </div>
-                    <div id="fechAno"> 2022 
+                    <div id="fechAno">  2022
                     </div>
                 </div>
-                <div class="fechaDiaSem"> JUEVES </div>
+                <div class="fechaDiaSem"> Sabado </div>
             </div> 
                 <!-- Acá el usuario va a ingresar el nombre de la tarea. variable que lo guarde y sea parte de la función AgregarTarea-->
                 <div id="accion" >
-                    <form action="">
-                        <input class="tarea_name" type="text" name="tasktext" autocomplete="off" placeholder="Nueva tarea">
+                    <form onsubmit="addTarea(event)">
+                        <input class="tarea_name" type="text" name="tareaTexto" autocomplete="off" placeholder="Nueva tarea">
                         <button type="submit" class="botonAdd" >+</button>
-                        <button type="button" class="botonOrdenar">Priorizar</button>
+                        <button type="button" class="botonOrdenar" onclick="mostrarTareasOrdenadas()">Priorizar</button>
                         </form> 
                     </div>
             <div class="contenedorTareas">
@@ -71,8 +68,6 @@
     </div>
     <div class="tareas_wrap" id="calendario">
         Hola, Soy el calendario
-
     </div>
 </body>
-<script src="./script.js"></script>
 </html>
