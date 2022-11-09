@@ -109,23 +109,23 @@ body:hover {
     align-items: center;
 }
 
-#fechaNumero {
+#dateNumber {
     font-size: 50px;
 }
 
-#fechaDiaSem {
+#dateText {
     letter-spacing: 3px;
     text-transform: uppercase;
 }
 
-#fechaMes,
-#fechaNumero,
+#dateMonth,
+#dateNumber,
 #dateText  {
     font-weight: bold;
 }
 
-#fechaMes,
-#fechAno {
+#dateMonth,
+#dateYear {
     margin-left: 7px;
     font-size: 20px;
 }
@@ -225,7 +225,7 @@ input {
     cursor: pointer;
 }
 
-#done {
+.done {
     background-color: whitesmoke;
     text-decoration: line-through;
     color: black;
